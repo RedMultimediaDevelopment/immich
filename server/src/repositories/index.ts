@@ -17,6 +17,7 @@ import { EventRepository } from 'src/repositories/event.repository';
 import { JobRepository } from 'src/repositories/job.repository';
 import { LibraryRepository } from 'src/repositories/library.repository';
 import { LoggingRepository } from 'src/repositories/logging.repository';
+import { FolderSearchRepository } from 'src/repositories/folder-search.repository';
 import { MachineLearningRepository } from 'src/repositories/machine-learning.repository';
 import { MapRepository } from 'src/repositories/map.repository';
 import { MediaRepository } from 'src/repositories/media.repository';
@@ -66,6 +67,7 @@ export const repositories = [
   DuplicateRepository,
   EmailRepository,
   EventRepository,
+  FolderSearchRepository,
   JobRepository,
   LibraryRepository,
   LoggingRepository,
