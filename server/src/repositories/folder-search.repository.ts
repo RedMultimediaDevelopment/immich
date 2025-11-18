@@ -31,7 +31,7 @@ export class FolderSearchRepository {
       .where('asset.localDateTime', 'is not', null);
 
     if (normalizedQuery) {
-      builder = builder.where(sql<boolean>`${folderPathExpression} ilike ${'%' + normalizedQuery + '%'}`);
+      builder = builder.where(folderPathExpression, 'ilike', sql`${'%' + normalizedQuery + '%'}`);
     }
 
     const rows = await builder
